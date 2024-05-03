@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body {
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+
+section {
+    scroll-margin: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+.container .logo:hover {
+    color: rgb(215, 133, 9);
+
+}
+
+
+header {
+    background-color: #270082;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: 0.2s ease-in;
+    /* border-radius: 5px; */
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+nav li:hover {
+    transition: 0.3s;
+
+}
+
+.logo {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.hero_section {
+    background-image: url(https://raw.githubusercontent.com/anshuopinion/10-Practice-Project-Html-CSS/Project-6-Music-Website/Project%206/images/hero_image.png);
+    background-attachment: fixed;
+    height: 170vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_section .section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hero_section h1 {
+    font-size: 4.6rem;
+}
+
+.hero_section h3 {
+    font-size: 3.2rem;
+}
+
+.music_section {
+    padding: 50px;
+    height: 85vh;
+    background-color: #270082;
+}
+
+.music_section h2 span {
+    text-align: center;
+}
+
+.music_section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 3rem;
+}
+
+.ipad_iphone_image {
+    position: relative;
+    margin-top: -40rem;
+    top: 40rem;
+}
+
+button {
+    padding: 1rem 1.5rem;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+
+}
+
+.primary_btn {
+    background-color: red;
+    color: white;
+}
+
+.music_section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.ipad_iphone_image{
+    margin-top: -40rem;
+    position: relative;
+    top: 33rem;
+}
+
+
+.about_music {
+    padding-top: 50rem;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.secondary_btn {
+    color: white;
+    background-color: #270082;
+}
+
+.video_section {
+    background-image: url(https://raw.githubusercontent.com/anshuopinion/10-Practice-Project-Html-CSS/Project-6-Music-Website/Project%206/images/video.png);
+    background-attachment: fixed;
+    min-height: 80rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+
+.video_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hero_section,
+.video_section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gift_section {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+    gap: 3rem;
+
+}
+
+.gift_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.footer_one {
+    background-color: #270082;
+    padding: 2rem;
+}
+
+.footer_one .container {
+    display: flex;
+    /* width: 200vh; */
+    color: white;
+    justify-content: space-between;
+}
+
+.footer_one h4 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+.footer_two {
+    background-color: #452c81;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.gift_section {
+    scroll-margin: 100px;
+}
+
+
+@media (max-width:768px){
+    html{
+        font-size: 40%;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu-bar i{
+        font-size: 2.4rem;
+    }
+    .footer_one .container {
+    flex-wrap: wrap;
+    gap: 2rem;
+    }
+    .footer_one .footer_links{
+        min-width: 13rem;
+    }
+    .gift_section img{
+        width: 100%;
+    }
+    .gift_section{
+        flex-direction: column;
+    }
+ }
+ @media (max-width:1024px) {
+    .ipad_iphone_image img{
+        max-width: 100%;
+    }
+    .mac_image img{
+        max-width: 100%;
+    }
+    .ipad_iphone_image{
+        margin-top: -2rem;
+        top: 1rem;
+    }
+    .about_music {
+    padding-top: 30rem;
+    }
+    .gift_section img{
+        width:40rem;
+    }
+    .hero_section{
+        height: 95vh;
+    }
+    .hero_section h1{
+        font-size: 10.6rem;
+    }
+   
+    
+ }
+
+@media (min-width:768px){
+    .menu-bar{
+        display: none;
+    }
+
+   
+}
+
+@media (max-width:425px) {
+    
+    .about_music {
+    padding-top: 15rem;
+    }
+    
+    .ipad_iphone_image{
+        margin-top: -14rem;
+        top: 20rem;
+    }
+    .hero_section{
+        height: 95vh;
+    }
+    .hero_section h1{
+        font-size: 10.6rem;
+    }
+    .music_section{
+        padding: 4px;
+        height: 81vh;
+    }
+}
